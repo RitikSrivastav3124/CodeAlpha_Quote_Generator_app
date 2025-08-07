@@ -135,7 +135,7 @@ class _quote_generator_home_PageState extends State<quote_generator_home_Page>
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Card(
-                          color: Colors.white.withOpacity(0.1),
+                          color: const Color.fromARGB(255, 191, 134, 241),
                           elevation: 8,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(24),
@@ -152,7 +152,15 @@ class _quote_generator_home_PageState extends State<quote_generator_home_Page>
                                 const SizedBox(height: 16),
                                 Text(
                                   "- $author",
-                                  style: Theme.of(context).textTheme.bodyMedium,
+                                  style: TextStyle(
+                                    color: const Color.fromARGB(
+                                      255,
+                                      200,
+                                      232,
+                                      245,
+                                    ),
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                   textAlign: TextAlign.center,
                                 ),
                               ],
